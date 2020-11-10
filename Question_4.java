@@ -1,0 +1,33 @@
+package Assignment8_Methods;
+
+public class Question_4 {
+	
+	// Function to print hollow rectangle 
+	static void print_rectangle(int n, int m) 
+	{ 
+		int i, j; 
+		for (i = 1; i <= n; i++) 
+		{ 
+			for (j = 1; j <= m; j++) 
+			{ 
+				if (i == 1 || i == n || 
+					j == 1 || j == m)			 
+					System.out.print("*");			 
+				else
+					System.out.print(" ");			 
+			} 
+			System.out.println(); 
+		} 
+	
+	} 
+	
+	// Driver program for above function 
+	public static void main(String args[]) 
+	{ 
+		int rows = 6, columns = 5; 
+		print_rectangle(rows, columns); 
+	} 
+} 
+
+
+
